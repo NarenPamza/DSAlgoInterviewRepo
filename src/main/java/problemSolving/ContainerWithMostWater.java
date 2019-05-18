@@ -13,7 +13,7 @@ public class ContainerWithMostWater {
 		int left = 0;
 		int right = a.length - 1;
 		while (left < right) {
-			maxSum = Math.max(maxSum, Math.min(a[left], a[right]) * (right - left));
+			maxSum = Math.max(maxSum,  Math.min(a[left], a[right]) * (right - left));
 
 			if (a[right] > a[left]) {
 				left++;
