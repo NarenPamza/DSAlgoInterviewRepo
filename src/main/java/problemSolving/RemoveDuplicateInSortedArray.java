@@ -1,7 +1,7 @@
 package problemSolving;
 
 
-public class removeDuplicate {
+public class RemoveDuplicateInSortedArray {
 
 	public static void main(String[] args) {
 
