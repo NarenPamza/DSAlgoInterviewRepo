@@ -2,12 +2,12 @@ package dataStructure;
 
 public class LinkedList {
 	
-	Node root;
+	public Node root;
 	
-	class Node {
-		int data;
+	public class Node {
+		public int data;
 		
-		Node next;
+		public Node next;
 		
 		Node(int data){
 			this.data = data;
