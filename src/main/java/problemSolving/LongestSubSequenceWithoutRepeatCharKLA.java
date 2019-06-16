@@ -7,7 +7,7 @@ public class LongestSubSequenceWithoutRepeatCharKLA {
 
 	public static void main(String[] args) {
 
-		String s = "pwwkew";
+		String s = "pwwkey";
 
 		char[] charArray = s.toCharArray();
 

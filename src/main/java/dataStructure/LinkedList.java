@@ -9,7 +9,7 @@ public class LinkedList {
 		
 		public Node next;
 		
-		Node(int data){
+		public Node(int data){
 			this.data = data;
 			next = null;
 		}

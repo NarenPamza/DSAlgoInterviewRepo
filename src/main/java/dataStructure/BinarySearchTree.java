@@ -16,6 +16,9 @@ public class BinarySearchTree {
 		searchTree.insert(8);
 		searchTree.displayInOrder();
 		
+		System.out.println("Displaying Pre Order");
+		searchTree.displayPreOrder();
+		
 		searchTree.delete(4);
 		System.out.println("After Deletion");
 		searchTree.displayInOrder();
@@ -24,6 +27,18 @@ public class BinarySearchTree {
 		
 		System.out.println("isValuePresent " + searchTree.isValuePresent(5));
 
+	}
+
+	public void displayPreOrder() {
+		printPreOrder(root);
+	}
+	
+	private void printPreOrder(Node root2) {
+		if (root2 != null) {
+			System.out.println(root2.value);
+			printPreOrder(root2.left);
+			printPreOrder(root2.right);
+		}
 	}
 
 	public boolean isValuePresent(int data) {
@@ -61,10 +76,12 @@ public class BinarySearchTree {
 
 	class Node {
 		int value;
+		int height;
 		Node right, left;
 
 		Node(int value) {
 			this.value = value;
+			this.height = 1;
 		}
 	}
 
