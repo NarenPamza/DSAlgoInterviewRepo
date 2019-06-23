@@ -56,15 +56,21 @@ public class StackToGetMin {
 	
 	public static void main(String[] args) {
 		StackToGetMin s = new StackToGetMin();
+		
+		s.push(2);
 		s.push(3);
-	    s.push(5);
-	    s.getMin();
-	    s.push(2);
-	    s.push(1);
-	    s.getMin();
-	    s.pop();
-	    s.getMin();
-	    s.pop();
-	    s.peek();
+		s.push(1);
+		s.peek();
+		s.getMin();
+//		s.push(3);
+//	    s.push(5);
+//	    s.getMin();
+//	    s.push(2);
+//	    s.push(1);
+//	    s.getMin();
+//	    s.pop();
+//	    s.getMin();
+//	    s.pop();
+//	    s.peek();
 	}
 }
