@@ -27,7 +27,7 @@ public class BFSBinaryTree {
 			return;
 		}
 		Node top = queue.peek();
-		System.out.println(queue.remove().value);
+		System.out.println(queue.remove().toString());
 		
 		if(top.left != null)
 			queue.add(top.left);
@@ -61,6 +61,12 @@ public class BFSBinaryTree {
 
 		Node(String value) {
 			this.value = value;
+		}
+		
+		@Override
+		public String toString() {
+			// TODO Auto-generated method stub
+			return this.value;
 		}
 	}
 

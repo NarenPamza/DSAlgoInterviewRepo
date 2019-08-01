@@ -9,7 +9,7 @@ public class KadaneAlgorithm {
 
 	public static void main(String[] args) {
 
-		int[] a = {1, 2, 3, -2, 5};
+		int[] a = {-2, -3, 4, -1, -2, 1, 5, -3};
 		System.out.println(findMaximumSum(a));
 
 	}

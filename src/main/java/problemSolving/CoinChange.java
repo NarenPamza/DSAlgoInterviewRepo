@@ -24,8 +24,10 @@ public class CoinChange {
 
 			System.out.println("Combination---start--");
 			for (int j = S[i]; j <= n; j++) {
-
+				
+				System.out.println("J value is "+ j + " s[i] is " + S[i] + " j - S[i] is " + (j - S[i]) + " & a[j - S[i]] is " + a[j - S[i]] );
 				a[j] += a[j - S[i]];
+				System.out.println(Arrays.toString(a));
 				
 			}
 			System.out.println(Arrays.toString(a));
@@ -37,9 +39,9 @@ public class CoinChange {
 
 	// Driver Function to test above function
 	public static void main(String args[]) {
-		int arr[] = {  2, 5, 3, 6};
+		int arr[] = {  5,7,3,2,9};
 		int m = arr.length;
-		int n = 5;
+		int n = 6;
 		System.out.println(countWays(arr, m, n));
 	}
 

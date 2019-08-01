@@ -1,5 +1,9 @@
 package dataStructure;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+
 public class Stack {
 
 	int length = 10;
@@ -27,7 +31,6 @@ public class Stack {
 	}
 
 	public void remove() {
-
 		if (index < 0) {
 			System.out.println("Stack underflow");
 			return;
@@ -37,9 +40,7 @@ public class Stack {
 	}
 
 	public void printlist() {
-		for (int i =0; i <= index; i++) {
-			System.out.println(value[i]);
-		}
+		IntStream.range(0, index).forEach(i -> System.out.println(value[i]));
 	}
 
 	public static void main(String[] args) {
