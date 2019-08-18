@@ -9,7 +9,7 @@ import dataStructure.LinkedList.Node;
  * @author Admin
  *
  */
-public class rotateLinkedList {
+public class RotateLinkedList {
 
 	public static void main(String[] args) {
 

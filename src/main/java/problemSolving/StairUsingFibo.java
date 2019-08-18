@@ -19,6 +19,6 @@ class StairUsingFibo {
 	/* Driver program to test above function */
 	public static void main(String args[]) {
 		int s = 4;
-		System.out.println("Number of ways = " + countWays(s));
+		System.out.println("Number of ways = " + countWays(20));
 	}
 }
