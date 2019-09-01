@@ -1,4 +1,4 @@
-package problemSolving;
+package kadaneAlgorithm;
 
 import java.util.HashMap;
 import java.util.Map;

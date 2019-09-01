@@ -1,4 +1,4 @@
-package problemSolving1;
+package linkedListProblem;
 // Java program to detect and remove loop in linked list 
 
 class DetectLoopFromGeekForGeeks { 

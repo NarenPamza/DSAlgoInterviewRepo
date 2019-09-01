@@ -22,18 +22,4 @@ public class MoveZeroAndNonZeroNumber {
 		}
 		System.out.println(Arrays.toString(a));
 	}
-
-	private static void swap(int[] a) {
-		int count = a.length - 1;
-		for (int i = a.length - 1; i >= 0; i--) {
-			if (a[i] != 0) {
-				a[count--] = a[i];
-				System.out.println(Arrays.toString(a));
-			}
-		}
-		while (count >= 0) {
-			a[count--] = 0;
-		}
-		System.out.println(Arrays.toString(a));
-	}
 }

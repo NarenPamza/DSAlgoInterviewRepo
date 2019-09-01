@@ -1,4 +1,4 @@
-package problemSolving;
+package kadaneAlgorithm;
 
 /**
  * Ref: https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/

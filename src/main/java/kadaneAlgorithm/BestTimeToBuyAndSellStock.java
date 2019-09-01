@@ -1,4 +1,4 @@
-package problemSolving;
+package kadaneAlgorithm;
 
 /*
  * Pattern of Kadane Algorithm

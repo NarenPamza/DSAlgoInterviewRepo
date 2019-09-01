@@ -59,13 +59,12 @@ public class SubArraysSumGS1 {
 	public static void main(String[] args) {
 
 		List<Integer> al = new ArrayList<Integer>();
-		al.add(6);
 		al.add(2);
 		al.add(4);
-		al.add(1);
+		al.add(2);
 		al.add(5);
+		al.add(1);
 		
-		int a[] = {6,2,4,1,5};
 		System.out.println(subarraySum(al, 6));
 	}
 }

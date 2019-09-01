@@ -1,4 +1,4 @@
-package problemSolving1;
+package grid;
 
 public class FindWordInBoard {
 

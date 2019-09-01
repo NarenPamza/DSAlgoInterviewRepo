@@ -1,4 +1,4 @@
-package problemSolving;
+package linkedListProblem;
 
 import dataStructure.LinkedList;
 import dataStructure.LinkedList.Node;

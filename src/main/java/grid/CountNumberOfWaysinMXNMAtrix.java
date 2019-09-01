@@ -1,4 +1,4 @@
-package problemSolving;
+package grid;
 
 /**
  * https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/
