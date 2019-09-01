@@ -12,9 +12,24 @@ public class KnapSack {
 
 	}
 
-	private static int knapSack(int w, int[] wt, int[] val, int n) {
-		// TODO Auto-generated method stub
-		return 0;
+	private static int knapSack(int WtValue, int[] wt, int[] val, int n) {
+
+		int K[][] = new int[n + 1][WtValue + 1];
+
+		for (int i = 0; i <= n; i++) {
+			for (int w = 0; w <= WtValue; w++) {
+				if (i == 0 || w == 0) {
+					K[i][w] = 0;
+				} else if (wt[i - 1] <= w) {
+					K[i][w] = Math.max(val[i - 1] + K[i - 1][w - wt[i - 1]], K[i - 1][w]);
+				} else {
+					K[i][w] = K[i - 1][w];
+				}
+			}
+			// System.out.println(" ");
+		}
+
+		return K[n][WtValue];
 	}
 
 }
