@@ -14,10 +14,7 @@ public class Move01s {
 	private static void moveValues(int[] a) {
 		int startIndex = 0;
 		for (int i = 0; i < a.length; i++) {
-			if (a[i] != 0) {
-				
-				
-				
+			if (a[i] != 1) {
 				// Swap
 				int temp = a[startIndex];
 				a[startIndex] = a[i];

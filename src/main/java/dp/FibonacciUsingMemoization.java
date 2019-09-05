@@ -4,23 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ref:
  * https://www.javabrahman.com/gen-java-programs/recursive-fibonacci-in-java-with-memoization/
- * 
  * @author Admin
- *
  */
-
 public class FibonacciUsingMemoization {
 
 	 static List<Long> list = new ArrayList<Long>();
 
 	public static void main(String[] args) {
-
-		String n = "7";
-
+		String n = "5";
 		System.out.println(findFibonnaci(Long.valueOf(n)));
-
 	}
 
 	static long findFibonnaci(long n) {
@@ -38,6 +31,5 @@ public class FibonacciUsingMemoization {
 		long value = (findFibo(n - 1) + findFibo(n - 2));
 		list.add(value);
 		return value;
-
 	}
 }
