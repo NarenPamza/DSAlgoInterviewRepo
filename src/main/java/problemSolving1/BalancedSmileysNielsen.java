@@ -1,6 +1,6 @@
 package problemSolving1;
 
-public class BalancedSmileys {
+public class BalancedSmileysNielsen {
 	public static boolean isBalanced(String input) {
 		int i = -1;
 

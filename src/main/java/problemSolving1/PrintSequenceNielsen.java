@@ -24,6 +24,7 @@ public class PrintSequenceNielsen {
 	private static int findSequence(int n, String string) {
 		
 		if(string.length() >= n ){
+			System.out.println("Sequence is " + string);
 			return Integer.parseInt(string.charAt(n) + "");
 		}
 		
