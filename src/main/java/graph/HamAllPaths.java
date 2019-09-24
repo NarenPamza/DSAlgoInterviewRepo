@@ -1,4 +1,4 @@
-package grid;
+package graph;
 
 import java.util.Arrays;
 

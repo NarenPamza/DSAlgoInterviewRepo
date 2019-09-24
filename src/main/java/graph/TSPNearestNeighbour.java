@@ -1,4 +1,4 @@
-package grid;
+package graph;
 
 /*Java Program to Implement Traveling Salesman Problem using Nearest neighbour Algorithm
 This Java Program is to Implement Traveling Salesman Problem using Nearest neighbour Algorithm.The travelling salesman problem (TSP) or travelling salesperson problem asks the following question: Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city? It is an NP-hard problem in combinatorial optimization, important in operations research and theoretical computer science.

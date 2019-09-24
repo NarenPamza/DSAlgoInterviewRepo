@@ -1,4 +1,4 @@
-package grid;
+package graph;
 
 /* Java program for solution of Hamiltonian Cycle problem 
 using backtracking */
