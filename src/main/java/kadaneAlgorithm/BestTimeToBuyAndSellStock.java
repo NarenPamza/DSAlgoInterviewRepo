@@ -11,7 +11,7 @@ public class BestTimeToBuyAndSellStock {
 		System.out.println(findMaxProfit(a));
 
 	}
-
+ 
 	private static int findMaxProfit(int[] a) {
 		int maxSum = 0;
 		int max_so_far = 0;
