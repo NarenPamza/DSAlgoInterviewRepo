@@ -50,18 +50,21 @@ public class LinkedList {
 	}
 	
 	public void reverse(){
-		if(root != null && root.next == null){
+		
+		if(root == null && root.next == null){
 			return;
 		}
 		
 		Node current = root;
-		Node prev = null,nextValue = null;
+		Node prev = null;
+		Node next = null;
 		while(current != null){
-			nextValue = current.next;
+			next = current.next;
 			current.next = prev;
 			prev = current;
-			current = nextValue;
+			current = next;
 		}
+		
 		root = prev;
 	}
 	

@@ -1,4 +1,4 @@
-package dp;
+package dpDfsBackTracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ public class CombinationSum {
 
 	public static void main(String[] args) {
 
-		int[] candidates = { 10, 1, 2, 7, 6, 1, 5 };
+		int[] candidates = { 1, 1, 2, 5, 6, 7, 10 };
 		int target = 8;
 		List<List<Integer>> combinationSum2 = combinationSum2(candidates, target);
 
@@ -28,8 +28,9 @@ public class CombinationSum {
 	}
 
 	private static void dfs_sum(int[] candidates, int index, int target, List<Integer> current,
-			List<List<Integer>> res) {
+			List<List<Integer>> res) {  
 		if (target == 0) {
+			System.out.println("Over with " + Arrays.toString(current.toArray()));
 			res.add(new ArrayList<>(current));
 			return;
 		}
@@ -39,6 +40,7 @@ public class CombinationSum {
 		}
 
 		for (int i = index; i < candidates.length; i++) {
+			System.out.println(i);
 			if (i == index || candidates[i] != candidates[i - 1]) {
 				current.add(candidates[i]);
 				dfs_sum(candidates, i + 1, target - candidates[i], current, res);
