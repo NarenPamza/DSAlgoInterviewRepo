@@ -29,7 +29,6 @@ public class Permutations2 {
 			for (int i = 0; i < nums.length; i++) {
 
 				if (isVisted[i] || i > 0 && nums[i] == nums[i - 1] && !isVisted[i - 1]) {
-					System.out.println(isVisted[i] + " " + i);
 					continue;
 				}
 
