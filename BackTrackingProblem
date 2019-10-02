@@ -1,0 +1,69 @@
+A general approach to backtracking questions in Java 
+(Subsets, Permutations, Combination Sum, Palindrome Partioning)
+Ref: https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
+
+1. Subsets : https://leetcode.com/problems/subsets/
+2. Subsets II (contains duplicates) : https://leetcode.com/problems/subsets-ii/
+3. Permutations : https://leetcode.com/problems/permutations/
+4. Permutations II (contains duplicates) : https://leetcode.com/problems/permutations-ii/
+5. Combination Sum : https://leetcode.com/problems/combination-sum/
+6. Combination Sum II (can't reuse same element) : https://leetcode.com/problems/combination-sum-ii/
+7. Palindrome Partitioning : https://leetcode.com/problems/palindrome-partitioning/
+
+-------------->
+
+DFS Problems (General Approach):
+1. IslandInGrid.java
+2. FindWordInBoard.java
+
+-------------->
+
+DP ( General Approach)
+1. CoinChange.java
+2. FibonacciUsingMemoization.java
+3. KnapSack.java
+4. DecodeWaysGS2.java
+
+-------------->
+
+Kadane Algorithm (General Approach)
+1. BestTimeToBuyAndSellStock.java
+2. KadaneAlgorithm.java
+3. LongestSubSequenceWithoutRepeatCharKLA.java
+4. ContainerWithMostWater.java
+
+-------------->
+
+Graph ( Refer Graph Package)
+
+-------------->
+
+Linked List ( General Approach Problem)
+1. DetectLoopFromGeekForGeeks.java
+2. DetectLoopInLinkedListUsingFloydCycleFinding.java
+3. LinkedListMidValue.java
+4. LinkedListNthNodeFromEnd.java
+
+-------------->
+For Array and String Problem: 
+Refer problemSolving and problemSolving1 Package.
+
+-------------->
+ Design Patters:
+ 1. Singleton 
+ 2. Chain of Responsibility
+ 3. Factory
+ 4. Command
+ 5. Observer ( Subscriber)
+ 6. Fly Weight
+ 7. Decorator
+ 8. Builder
+ 9. Strategy 
+ 
+ -------------->
+ 
+ Core Java:
+ 1. Concurrency -> http://tutorials.jenkov.com/java-concurrency/index.html
+ 2. JavatPoint -> Core Java Questions Revision.
+ 3. Refer coreJavaQuestions.txt file
+ 

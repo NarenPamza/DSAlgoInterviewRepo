@@ -2,6 +2,7 @@ package problemSolving;
 import java.util.Arrays;
 
 //Dutch NAtional flag Problem 
+// Move 0 to left, 1 in middle and 2 to Last
 public class DutchNationalFlagProblem {
 	public static void main(String[] args) {
 

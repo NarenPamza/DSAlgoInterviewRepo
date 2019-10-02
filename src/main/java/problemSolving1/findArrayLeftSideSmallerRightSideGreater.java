@@ -10,43 +10,7 @@ public class findArrayLeftSideSmallerRightSideGreater {
 		// int arr[] = { 7, 2, 5, 9, 10, 11 };
 
 		int[] arr = { 5, 1, 4, 3, 6, 8, 10, 7, 9 };
-		System.out.println(findValue(arr));
 		System.out.println(element(arr, arr.length));
-	}
-
-	// O(n^2)
-	private static int findValue(int[] a) {
-		int result = -1;
-
-		for (int i = 1; i <= a.length - 2; i++) {
-
-			result = a[i];
-			int j = i - 1;
-			while (j >= 0) {
-				if (a[j] < a[i]) {
-					j--;
-				} else {
-					result = -1;
-					break;
-				}
-
-			}
-
-			int k = a.length - 1;
-			while (k > i) {
-				if (a[k] > a[i]) {
-					k--;
-				} else {
-					result = -1;
-					break;
-				}
-			}
-
-			if (result != -1) {
-				break;
-			}
-		}
-		return result;
 	}
 
 	// O(n)

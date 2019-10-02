@@ -41,7 +41,7 @@ public class CombinationSum {
 
 		for (int i = index; i < candidates.length; i++) {
 			System.out.println(i);
-			if (i == index || candidates[i] != candidates[i - 1]) {
+			if (i == index || candidates[i] != candidates[i - 1]) { // Skip Duplicates
 				current.add(candidates[i]);
 				dfs_sum(candidates, i + 1, target - candidates[i], current, res);
 				current.remove(current.size() - 1);
