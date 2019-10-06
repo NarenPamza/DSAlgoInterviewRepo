@@ -24,11 +24,15 @@ public class SubSet {
 		return result;
 	}
 
-	private static void permutate(List<List<Integer>> result, List<Integer> arrayList, int[] nums, int i) {
+	private static void permutate(List<List<Integer>> result, List<Integer> arrayList, int[] nums, int startIndex) {
+		
 		result.add(new ArrayList<>(arrayList));
-		for (int j = i; j < nums.length; j++) {
+		for (int j = startIndex; j < nums.length; j++) {
+			System.out.println("before" + j);
 			arrayList.add(nums[j]);
-			permutate(result, arrayList, nums, j + 1);
+			
+			permutate(result, arrayList, nums, j +1);
+			System.out.println("after backTracking" + j);
 			arrayList.remove(arrayList.size() - 1);
 		}
 	}

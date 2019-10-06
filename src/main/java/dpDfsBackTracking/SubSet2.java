@@ -20,7 +20,7 @@ import java.util.List;
 public class SubSet2 {
 
 	public static void main(String[] args) {
-		int nums[] = { 1, 2, 2 };
+		int nums[] = { 1, 1, 3 };
 
 		List<List<Integer>> subSet = findSubSet(nums);
 
@@ -42,10 +42,13 @@ public class SubSet2 {
 		result.add(new ArrayList<>(arrayList));
 
 		for (int i = start; i < nums.length; i++) {
+			
 			if (i == start || nums[i] != nums[i - 1]) { // Skip Duplicates
 				arrayList.add(nums[i]);
 				backTrack(result, arrayList, nums, i + 1);
 				arrayList.remove(arrayList.size() - 1);
+			}else {
+				System.out.println();
 			}
 		}
 	}

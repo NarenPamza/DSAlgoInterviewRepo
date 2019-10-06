@@ -2,8 +2,8 @@ A general approach to backtracking questions in Java
 (Subsets, Permutations, Combination Sum, Palindrome Partioning)
 Ref: https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
 
-1. Subsets : https://leetcode.com/problems/subsets/
-2. Subsets II (contains duplicates) : https://leetcode.com/problems/subsets-ii/
+1. Subset.java : https://leetcode.com/problems/subsets/
+2. Subset2.java (contains duplicates) : https://leetcode.com/problems/subsets-ii/
 3. Permutations : https://leetcode.com/problems/permutations/
 4. Permutations II (contains duplicates) : https://leetcode.com/problems/permutations-ii/
 5. Combination Sum : https://leetcode.com/problems/combination-sum/

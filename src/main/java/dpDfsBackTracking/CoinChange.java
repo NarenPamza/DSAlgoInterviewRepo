@@ -13,32 +13,32 @@ So the output should be 5.
  */
 public class CoinChange {
 
-	static long countWays(int S[], int m, int n) {
-		int a[] = new int[n + 1];
+	static long countWays(int coinArray[], int coinArrayLength, int n) {
+		int dp[] = new int[n + 1];
 
-		Arrays.fill(a, 0);
+		Arrays.fill(dp, 0);
 
-		a[0] = 1;
+		dp[0] = 1;
 
-		for (int i = 0; i < m; i++) {
+		for (int i = 0; i < coinArrayLength; i++) {
 
 			System.out.println("Combination---start--");
-			for (int j = S[i]; j <= n; j++) {
-				System.out.println("J value is "+ j + " s[i] is " + S[i] + " j - S[i] is " + (j - S[i]) + " & a[j - S[i]] is " + a[j - S[i]] );
-				a[j] += a[j - S[i]];
-				System.out.println(Arrays.toString(a));
+			for (int j = coinArray[i]; j <= n; j++) {
+//				System.out.println("J value is "+ j + " s[i] is " + S[i] + " j - S[i] is " + (j - S[i]) + " & a[j - S[i]] is " + a[j - S[i]] );
+				dp[j] += dp[j - coinArray[i]];
+//				System.out.println(Arrays.toString(a));
 			}
-			System.out.println(Arrays.toString(a));
+			System.out.println(Arrays.toString(dp));
 			System.out.println("Combination---End--");
 		}
-		return a[n];
+		return dp[n];
 	}
 
 	// Driver Function to test above function
 	public static void main(String args[]) {
-		int S[] = {  5,7,3,2,9};
+		int S[] = {  2, 5, 3, 6};
 		int m = S.length;
-		int n = 6;
+		int n = 10;
 		System.out.println(countWays(S, m, n));
 	}
 
