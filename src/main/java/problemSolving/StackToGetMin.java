@@ -20,6 +20,7 @@ public class StackToGetMin {
 		if(stack.isEmpty()){
 			stack.push(data);
 			minElement = data;
+			return;
 		}
 		
 		if(data < minElement){
@@ -40,7 +41,7 @@ public class StackToGetMin {
 		
 		int value = stack.pop();
 		if(value < minElement){
-			System.out.println(minElement);
+			System.out.println("Pop Value is " + minElement);
 			minElement = 2*minElement - value;
 		}
 		else {
@@ -58,9 +59,10 @@ public class StackToGetMin {
 		StackToGetMin s = new StackToGetMin();
 		
 		s.push(2);
-		s.push(3);
 		s.push(1);
-		s.peek();
+		s.push(5);
+//		s.push(1);
+		s.pop();
 		s.getMin();
 //		s.push(3);
 //	    s.push(5);

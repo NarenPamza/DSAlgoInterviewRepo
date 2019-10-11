@@ -19,12 +19,10 @@ public class FibonacciUsingMemoization {
 	static long findFibonnaci(long n) {
 		list.add(1L);
 		list.add(1L);
-		return findFibo2(n);
+		return findFibo(n);
 	}         
 	
 	private static long findFibo2(long n) {
-
-		System.out.println("inside mthod " + n);
 
 		if (list.size() > n && list.get((int) n) != null) {
 			return list.get((int) n);
@@ -38,8 +36,6 @@ public class FibonacciUsingMemoization {
 
 	private static long findFibo(long n) {
 		
-		System.out.println("inside mthod " + n);
-
 		if (list.size() > n && list.get((int) n) != null) {
 			return list.get((int) n);
 		}
