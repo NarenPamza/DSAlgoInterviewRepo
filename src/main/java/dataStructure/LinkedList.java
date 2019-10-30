@@ -15,18 +15,42 @@ public class LinkedList {
 		}
 	}
 
+	public static Node getIntersectionNode(Node headA, Node headB) {
+		Node pa = headA, pb = headB;
+		while (pa != pb) {
+			pa = (pa != null) ? pa.next : headB;
+			pb = (pb != null) ? pb.next : headA;
+		}
+		return pa;
+	}
+
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
-		list.insert(5);
-		list.insert(6);
-		list.insert(9);
-		list.insert(7);
 
-		list.remove(5);
-		list.printValues();
-		System.out.println("After Reverse");
-		list.reverse();
-		list.printValues();
+		list.root = list.new Node(4);
+		Node node1 = list.new Node(10);
+		Node node = list.new Node(1);
+		Node node2 = list.new Node(5);
+
+		list.root.next = node1;
+		list.root.next.next = node;
+		list.root.next.next.next = node2;
+
+		// list.remove(5);
+		// list.printValues();
+		// System.out.println("After Reverse");
+		// list.reverse();
+		// list.printValues();
+
+		LinkedList list2 = new LinkedList();
+
+		list2.root = list.new Node(7);
+
+		list2.root.next = node;
+		list2.root.next.next = node2;
+
+		Node intersectionNode = getIntersectionNode(list.root, list2.root);
+		System.out.println(intersectionNode != null ? intersectionNode.data : null);
 
 	}
 
