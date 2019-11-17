@@ -1,4 +1,5 @@
 package problemSolving1;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,12 +17,30 @@ public class AddTwoSumToK {
 
 	public static void main(String[] args) {
 
-		int[] a = { 2, 7, 11, 15 };
+		int[] a = {10, 12, 10, 15, -1, 7, 6, 
+                5, 4, 2, 1, 1, 1};
 
-		int k = 18;
+		int k = 11;
 
-		System.out.println(Arrays.toString(findTwoSum(a, k)));
-		System.out.println(hasArrayTwoCandidates(a, a.length, k));
+		//System.out.println(Arrays.toString(findTwoSum(a, k)));
+		//System.out.println(hasArrayTwoCandidates(a, a.length, k));
+		
+		System.out.println(findTwoPairsEqualsToKCount(a, k));
+	}
+
+	static int findTwoPairsEqualsToKCount(int[] a, int k) {
+		int count = 0;
+		
+		Map<Integer,Integer> map = new HashMap<>();
+		for (int i = 0; i < a.length; i++) {
+			if(map.containsKey(k -a[i])){
+				count++;
+			}else {
+				map.put(a[i], 0);
+			}
+		}
+
+		return count;
 	}
 
 	static boolean hasArrayTwoCandidates(int A[], int arr_size, int sum) {

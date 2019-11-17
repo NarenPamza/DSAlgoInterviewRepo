@@ -34,9 +34,12 @@ public class SubArraysSumGS1 {
 	public static void main(String[] args) {
 
 		List<Integer> al = new ArrayList<Integer>();
-		al.add(2);
+		              
 		al.add(4);
 		al.add(2);
+		al.add(2);
+		al.add(2);
+		al.add(4);
 		al.add(5);
 		al.add(1);
 
