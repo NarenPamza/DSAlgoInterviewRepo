@@ -1,38 +1,37 @@
 package dataStructure;
 
-
 public class BinarySearchTree {
 
 	Node root;
 
 	public static void main(String[] args) {
 		BinarySearchTree searchTree = new BinarySearchTree();
-		searchTree.insert(2);
 		
+		searchTree.insert(2);
 		searchTree.insert(4);
 		searchTree.insert(7);
 		searchTree.insert(5);
 		searchTree.insert(9);
 		searchTree.insert(8);
 		searchTree.displayInOrder();
-		
+
 		System.out.println("Displaying Pre Order");
 		searchTree.displayPreOrder();
-		
+
 		searchTree.delete(4);
 		System.out.println("After Deletion");
 		searchTree.displayInOrder();
-		
+
 		System.out.println("IsvalidTree " + searchTree.isValidBST());
-		
-		System.out.println("isValuePresent " + searchTree.isValuePresent(5));
+
+		System.out.println("isValuePresent " + searchTree.isValuePresent(4));
 
 	}
 
 	public void displayPreOrder() {
 		printPreOrder(root);
 	}
-	
+
 	private void printPreOrder(Node root2) {
 		if (root2 != null) {
 			System.out.println(root2.value);
@@ -128,45 +127,41 @@ public class BinarySearchTree {
 		}
 		return root2;
 	}
-	
-	public void delete(int value){
-		root = deleteValue(root,value);
+
+	public void delete(int value) {
+		root = deleteValue(root, value);
 	}
 
 	private Node deleteValue(Node root, int data) {
-		
-		if(root == null){
+
+		if (root == null) {
 			return root;
 		}
-		
-		if(data < root.value){
+
+		if (data < root.value) {
 			root.left = deleteValue(root.left, data);
-		} else if(data > root.value){
+		} else if (data > root.value) {
 			root.right = deleteValue(root.right, data);
 		} else {
-			
-			if(root.left == null){
+
+			if (root.left == null) {
 				return root.right;
-			} else if( root.right == null){
+			} else if (root.right == null) {
 				return root.left;
+			} else {
+				root.value = minValue(root.right);
+				root.right = deleteValue(root.right, root.value);
 			}
-			
-			root.value = minValue(root.right);
-			
-			root.right = deleteValue(root.right, root.value);
 		}
-		
 		return root;
 	}
-	
-	private int minValue(Node root){
-		int minValue = root.value;
-		
-		while(root.left != null){
-			minValue = root.left.value;
-			root = root.left;
+
+	private int minValue(Node node) {
+		int minValue = 0;
+		while (node != null) {
+			minValue = node.value;
+			node = node.left;
 		}
-		
 		return minValue;
 	}
 }

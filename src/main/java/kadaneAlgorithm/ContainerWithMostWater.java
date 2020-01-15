@@ -11,19 +11,18 @@ public class ContainerWithMostWater {
 	}
 
 	private static int findMostWater(int[] a) {
-		int maxSum = 0;
+		int l = 0;
+		int r = a.length-1;
+		int max = 0;
 
-		int left = 0;
-		int right = a.length - 1;
-		while (left < right) {
-			maxSum = Math.max(maxSum,  Math.min(a[left], a[right]) * (right - left));
-
-			if (a[right] > a[left]) {
-				left++;
+		while (l < r) {
+			max = Math.max(max, Math.min(a[l], a[r]) * (r - l));
+			if (a[l] < a[r]) {
+				l++;
 			} else {
-				right--;
+				r--;
 			}
 		}
-		return maxSum;
+		return max;
 	}
 }

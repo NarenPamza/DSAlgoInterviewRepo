@@ -36,7 +36,7 @@ Kadane Algorithm (General Approach)
 -------------->
 
 Graph ( Refer Graph Package)
-
+  
 -------------->
 
 Linked List ( General Approach Problem)
@@ -45,11 +45,21 @@ Linked List ( General Approach Problem)
 3. LinkedListMidValue.java
 4. LinkedListNthNodeFromEnd.java
 
+
 -------------->
 For Array and String Problem: 
 Refer problemSolving and problemSolving1 Package.
 
 -------------->
+Data Structure:
+1. Array
+2. Stack
+3. Queue
+4. Binary Search Tree
+5. LinkedList
+	5.1 MergeSort on Linked List
+
+--------------->
  Design Patters:
  1. Singleton 
  2. Chain of Responsibility

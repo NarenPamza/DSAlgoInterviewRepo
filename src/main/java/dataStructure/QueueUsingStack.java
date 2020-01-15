@@ -21,7 +21,9 @@ public class QueueUsingStack {
 		}
 
 		x = stack1.pop();
+		System.out.println("Popped item is " + x);
 		res = deQueue();
+		System.out.println("pushing item is " + x);
 		stack1.push(x);
 		return res;
 	}
@@ -34,7 +36,7 @@ public class QueueUsingStack {
 		q.enQueue(3);
 
 		System.out.print(q.deQueue() + " ");
-		System.out.print(q.deQueue() + " ");
-		System.out.print(q.deQueue() + " ");
+//		System.out.print(q.deQueue() + " ");
+//		System.out.print(q.deQueue() + " ");
 	}
 }

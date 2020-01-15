@@ -66,7 +66,9 @@ class CountNegativeNumbersInMatrix {
 
 	// Driver code
 	public static void main(String[] args) {
-		int M[][] = { { -3, -2, -1, 1 }, { -2, 2, 3, 4 }, { 4, 5, 7, 8 } };
+		int M[][] = { { -3, -2, -1, 1 }, 
+						{ -2, 2, 3, 4 }, 
+						{ 4, 5, 7, 8 } };
 		int r = M.length;
 		int c = M[0].length;
 		System.out.println(countNegative(M, r, c));

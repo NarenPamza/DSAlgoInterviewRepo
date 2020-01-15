@@ -18,7 +18,7 @@ public class LinkedListFindCycle2 {
 		list.root.next.next.next.next = new ListNode(5);
 
 		// Create Loop for tEsting
-		list.root.next.next.next.next.next = list.root;
+		list.root.next.next.next.next.next = list.root.next;
 
 		System.out.println(list.isLoopExist(list.root));
 		System.out.println(list.findCycleStartNode(list.root).value);

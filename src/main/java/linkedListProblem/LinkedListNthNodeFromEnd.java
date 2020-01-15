@@ -12,7 +12,6 @@ public class LinkedListNthNodeFromEnd {
 		list.insert(3);
 		list.insert(4);
 		list.insert(5);
-		list.insert(6);
 		
 		int n = 2;
 		findNthNode(list,n);

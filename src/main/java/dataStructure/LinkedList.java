@@ -36,11 +36,11 @@ public class LinkedList {
 		list.root.next.next = node;
 		list.root.next.next.next = node2;
 
-		// list.remove(5);
-		// list.printValues();
-		// System.out.println("After Reverse");
-		// list.reverse();
-		// list.printValues();
+		 list.remove(5);
+		 list.printValues();
+		 System.out.println("After Reverse");
+		 list.reverse();
+		 list.printValues();
 
 		LinkedList list2 = new LinkedList();
 
@@ -80,15 +80,14 @@ public class LinkedList {
 		}
 
 		Node current = root;
-		Node prev = null;
 		Node next = null;
+		Node prev = null;
 		while (current != null) {
 			next = current.next;
 			current.next = prev;
 			prev = current;
 			current = next;
 		}
-
 		root = prev;
 	}
 

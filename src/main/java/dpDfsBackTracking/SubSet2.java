@@ -20,7 +20,7 @@ import java.util.List;
 public class SubSet2 {
 
 	public static void main(String[] args) {
-		int nums[] = { 1, 1, 3 };
+		int nums[] = { 1,2,2 };
 
 		List<List<Integer>> subSet = findSubSet(nums);
 
