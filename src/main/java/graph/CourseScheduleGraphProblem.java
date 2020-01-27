@@ -16,6 +16,8 @@ public class CourseScheduleGraphProblem {
 	public static boolean canFinish(int numCourses, int[][] prerequisites) {
 		boolean[] result = new boolean[numCourses];
 		Map<Integer, List<Integer>> edges = new HashMap<Integer, List<Integer>>();
+		
+		// Construct Adjacency Lists
 		for (int[] inputs : prerequisites) {
 
 			if (edges.containsKey(inputs[1])) {
