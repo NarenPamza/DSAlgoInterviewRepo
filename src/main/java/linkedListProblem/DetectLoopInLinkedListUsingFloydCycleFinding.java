@@ -6,7 +6,7 @@ import dataStructure.LinkedList.Node;
 /**
  * Ref
  * https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
- * @author Admin
+ * 
  *
  */
 public class DetectLoopInLinkedListUsingFloydCycleFinding {
